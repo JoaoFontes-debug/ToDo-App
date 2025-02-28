@@ -1,0 +1,18 @@
+/* Estilos personalizados complementares ao Tailwind */
+.todo-checkbox:checked {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+.todo-checkbox:checked::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 35%;
+    top: 10%;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
